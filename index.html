@@ -114,12 +114,12 @@
 </div>
 
 <div class="tabs">
-  <button class="tab active" onclick="showTab('itinerary')">Itinerary</button>
-  <button class="tab" onclick="showTab('packing')">Packing</button>
-  <button class="tab" onclick="showTab('meds')">Medications</button>
-  <button class="tab" onclick="showTab('need-to-know')">Need to Know</button>
-  <button class="tab" onclick="showTab('culture')">Culture & Places</button>
-  <button class="tab" onclick="showTab('map')">Route Map</button>
+  <button class="tab active" onclick="showTab('itinerary', this)">Itinerary</button>
+  <button class="tab" onclick="showTab('packing', this)">Packing</button>
+  <button class="tab" onclick="showTab('meds', this)">Medications</button>
+  <button class="tab" onclick="showTab('need-to-know', this)">Need to Know</button>
+  <button class="tab" onclick="showTab('culture', this)">Culture & Places</button>
+  <button class="tab" onclick="showTab('map', this)">Route Map</button>
 </div>
 
 <!-- ITINERARY -->
@@ -910,11 +910,11 @@
 </div>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  function showTab(id) {
+  function showTab(id, el) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
     document.getElementById(id).classList.add('active');
-    event.target.classList.add('active');
+    el.classList.add('active');
   }
 
   // Countdown
