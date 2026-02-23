@@ -841,10 +841,35 @@
     document.getElementById('pack-bar').style.width = pct + '%';
     document.getElementById('pack-count').textContent = checked.length + ' of ' + all.length + ' packed (' + pct + '%)';
   }
-  document.querySelectorAll('#packing input[type="checkbox"]').forEach(cb => {
-    cb.addEventListener('change', updateProgress);
-  });
+
+  // Save checkbox state to localStorage
+  function saveCheckboxes() {
+    const state = {};
+    document.querySelectorAll('#packing input[type="checkbox"]').forEach(cb => {
+      state[cb.id] = cb.checked;
+    });
+    localStorage.setItem('patagonia-packing', JSON.stringify(state));
+  }
+
+  // Restore checkbox state from localStorage
+  function restoreCheckboxes() {
+    const saved = localStorage.getItem('patagonia-packing');
+    if (!saved) return;
+    const state = JSON.parse(saved);
+    document.querySelectorAll('#packing input[type="checkbox"]').forEach(cb => {
+      if (cb.id in state) cb.checked = state[cb.id];
+    });
+  }
+
+  restoreCheckboxes();
   updateProgress();
+
+  document.querySelectorAll('#packing input[type="checkbox"]').forEach(cb => {
+    cb.addEventListener('change', () => {
+      saveCheckboxes();
+      updateProgress();
+    });
+  });
 </script>
 </body>
 </html>
