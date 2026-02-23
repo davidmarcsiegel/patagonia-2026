@@ -17,25 +17,25 @@
     --border: #d4c9b0;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--paper); color: var(--ink); font-family: 'DM Mono', monospace; font-size: 13px; line-height: 1.6; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Mono', monospace; font-size: 15px; line-height: 1.6; }
 
   .header { background: var(--ink); color: var(--paper); padding: 40px 28px 28px; position: relative; overflow: hidden; }
   .header::before { content: ''; position: absolute; top: -40px; right: -40px; width: 260px; height: 260px; border-radius: 50%; background: var(--accent); opacity: 0.15; }
-  .header-eyebrow { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--accent2); margin-bottom: 8px; }
+  .header-eyebrow { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--accent2); margin-bottom: 8px; }
   .header h1 { font-family: 'Playfair Display', serif; font-size: clamp(26px, 6vw, 48px); font-weight: 400; line-height: 1.1; margin-bottom: 6px; }
   .header h1 em { font-style: italic; color: #a8c5b5; }
-  .header-sub { color: #9a9080; font-size: 11px; letter-spacing: 0.1em; }
-  .countdown-badge { margin-top: 16px; display: inline-block; background: var(--accent2); color: white; padding: 5px 14px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; }
+  .header-sub { color: #9a9080; font-size: 13px; letter-spacing: 0.1em; }
+  .countdown-badge { margin-top: 16px; display: inline-block; background: var(--accent2); color: white; padding: 6px 16px; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; }
 
   .tabs { display: flex; background: var(--warm); border-bottom: 2px solid var(--border); overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .tab { padding: 12px 18px; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; white-space: nowrap; color: var(--muted); background: none; border: none; border-bottom: 3px solid transparent; font-family: 'DM Mono', monospace; transition: all 0.2s; }
+  .tab { padding: 14px 18px; font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; white-space: nowrap; color: var(--muted); background: none; border: none; border-bottom: 3px solid transparent; font-family: 'DM Mono', monospace; transition: all 0.2s; }
   .tab:hover { color: var(--ink); }
   .tab.active { color: var(--accent); border-bottom: 3px solid var(--accent); background: var(--paper); }
 
   .section { display: none; padding: 24px 20px 60px; max-width: 680px; }
   .section.active { display: block; }
-  .section-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 400; margin-bottom: 4px; }
-  .section-subtitle { font-size: 10px; color: var(--muted); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 24px; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 400; margin-bottom: 4px; }
+  .section-subtitle { font-size: 12px; color: var(--muted); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 24px; }
 
   /* ITINERARY */
   .itinerary-day { border-left: 2px solid var(--border); padding: 0 0 24px 18px; position: relative; margin-left: 38px; }
@@ -46,92 +46,60 @@
   .itinerary-day.highlight { border-left-color: var(--accent); }
   .itinerary-day.ship-day { border-left-color: var(--ship); }
   .itinerary-day.transit-day .day-dot { background: var(--accent2); border-color: var(--accent2); }
-  .day-label { position: absolute; left: -48px; top: 0; font-size: 10px; color: var(--muted); text-align: right; width: 30px; }
-  .day-date { font-size: 9px; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 2px; }
-  .day-title { font-family: 'Playfair Display', serif; font-size: 15px; margin-bottom: 3px; }
-  .day-hotel { font-size: 10px; color: var(--muted); margin-bottom: 5px; }
-  .day-detail { font-size: 11px; color: #5a5040; line-height: 1.5; }
-  .tag { display: inline-block; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; margin-bottom: 5px; }
+  .day-label { position: absolute; left: -48px; top: 0; font-size: 12px; color: var(--muted); text-align: right; width: 30px; }
+  .day-date { font-size: 12px; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 2px; }
+  .day-title { font-family: 'Playfair Display', serif; font-size: 18px; margin-bottom: 3px; }
+  .day-hotel { font-size: 13px; color: var(--muted); margin-bottom: 5px; }
+  .day-detail { font-size: 14px; color: #5a5040; line-height: 1.6; }
+  .tag { display: inline-block; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 5px; }
   .tag-ship { background: #dce8f5; color: var(--ship); }
   .tag-land { background: #dceee6; color: var(--accent); }
   .tag-transit { background: #fdeede; color: var(--accent2); }
-  .alert-inline { font-size: 10px; color: #8a4010; background: #fdf4e8; border-left: 2px solid var(--accent2); padding: 4px 8px; margin-top: 5px; }
+  .alert-inline { font-size: 13px; color: #8a4010; background: #fdf4e8; border-left: 2px solid var(--accent2); padding: 6px 10px; margin-top: 5px; }
 
   /* PACKING */
   .pack-category { margin-bottom: 24px; }
-  .pack-category h3 { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 5px; margin-bottom: 10px; }
-  .pack-item { display: flex; align-items: flex-start; gap: 10px; padding: 4px 0; cursor: pointer; }
-  .pack-item input[type="checkbox"] { margin-top: 2px; accent-color: var(--accent); width: 14px; height: 14px; flex-shrink: 0; cursor: pointer; }
-  .pack-item label { cursor: pointer; font-size: 12px; line-height: 1.4; }
+  .pack-category h3 { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 5px; margin-bottom: 10px; }
+  .pack-item { display: flex; align-items: flex-start; gap: 10px; padding: 6px 0; cursor: pointer; }
+  .pack-item input[type="checkbox"] { margin-top: 3px; accent-color: var(--accent); width: 16px; height: 16px; flex-shrink: 0; cursor: pointer; }
+  .pack-item label { cursor: pointer; font-size: 14px; line-height: 1.5; }
   .pack-item input:checked + label { text-decoration: line-through; color: var(--muted); }
-  .pack-note { font-size: 10px; color: var(--accent2); display: block; margin-top: 1px; }
-  .pack-progress { background: var(--warm); border-radius: 2px; height: 4px; margin-bottom: 20px; overflow: hidden; }
+  .pack-note { font-size: 12px; color: var(--accent2); display: block; margin-top: 2px; }
+  .pack-progress { background: var(--warm); border-radius: 2px; height: 5px; margin-bottom: 20px; overflow: hidden; }
   .pack-progress-bar { background: var(--accent); height: 100%; width: 0%; transition: width 0.3s; border-radius: 2px; }
-  .pack-count { font-size: 10px; color: var(--muted); margin-bottom: 8px; }
+  .pack-count { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
 
   /* MEDICATIONS */
   .med-card { border: 1px solid var(--border); padding: 14px; margin-bottom: 14px; background: white; }
-  .med-name { font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 3px; }
-  .med-type { display: inline-block; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; padding: 2px 8px; margin-bottom: 8px; }
+  .med-name { font-family: 'Playfair Display', serif; font-size: 18px; margin-bottom: 3px; }
+  .med-type { display: inline-block; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 9px; margin-bottom: 8px; }
   .med-type.seasick { background: #dce8f5; color: var(--ship); }
   .med-type.gi { background: #dceee6; color: var(--accent); }
   .med-type.pain { background: #fdeede; color: var(--accent2); }
   .med-type.antibiotic { background: #f0dcea; color: #6a3060; }
   .med-type.kit { background: var(--warm); color: var(--muted); }
-  .med-timing { font-size: 11px; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
-  .med-detail { font-size: 11px; color: #5a5040; line-height: 1.5; }
-  .med-note { margin-top: 8px; padding: 7px; background: #fdf8f0; border-left: 2px solid var(--accent2); font-size: 10px; color: #8a5020; }
+  .med-timing { font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+  .med-detail { font-size: 13px; color: #5a5040; line-height: 1.6; }
+  .med-note { margin-top: 8px; padding: 8px; background: #fdf8f0; border-left: 2px solid var(--accent2); font-size: 12px; color: #8a5020; }
 
   .seasick-ladder { background: var(--warm); border: 1px solid var(--border); padding: 14px; margin-bottom: 20px; }
-  .seasick-ladder h3 { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
-  .ladder-step { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 8px; font-size: 11px; }
-  .ladder-num { background: var(--ship); color: white; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 9px; flex-shrink: 0; margin-top: 1px; }
+  .seasick-ladder h3 { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .ladder-step { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 8px; font-size: 13px; }
+  .ladder-num { background: var(--ship); color: white; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0; margin-top: 1px; }
 
   /* NEED TO KNOW */
   .info-block { border: 1px solid var(--border); padding: 14px; margin-bottom: 14px; background: white; }
-  .info-block h3 { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
-  .info-block p, .info-block li { font-size: 12px; line-height: 1.6; color: #3a3028; }
+  .info-block h3 { font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .info-block p, .info-block li { font-size: 14px; line-height: 1.7; color: #3a3028; }
   .info-block ul { padding-left: 16px; }
-  .info-block li { margin-bottom: 3px; }
-  .alert-block { background: #fdf4e8; border-left: 3px solid var(--accent2); padding: 12px 14px; margin-bottom: 14px; font-size: 11px; color: #7a4010; line-height: 1.5; }
-  .alert-block strong { display: block; margin-bottom: 2px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .info-block li { margin-bottom: 5px; }
+  .alert-block { background: #fdf4e8; border-left: 3px solid var(--accent2); padding: 12px 14px; margin-bottom: 14px; font-size: 13px; color: #7a4010; line-height: 1.6; }
+  .alert-block strong { display: block; margin-bottom: 4px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
 
   @media (max-width: 480px) {
-    body { font-size: 15px; }
     .header { padding: 28px 18px 22px; }
-    .header-eyebrow { font-size: 13px; }
-    .header-sub { font-size: 14px; }
-    .header a { font-size: 13px !important; }
-    .countdown-badge { font-size: 13px; }
-    .tab { font-size: 12px; }
     .section { padding: 18px 16px 50px; }
-    .section-subtitle { font-size: 12px; }
     .itinerary-day { margin-left: 34px; }
-    .day-label { font-size: 12px; }
-    .day-date { font-size: 12px; }
-    .day-title { font-size: 18px; }
-    .day-hotel { font-size: 13px; }
-    .day-detail { font-size: 14px; }
-    .tag { font-size: 11px; }
-    .alert-inline { font-size: 13px; }
-    .pack-category h3 { font-size: 12px; }
-    .pack-item label { font-size: 15px; }
-    .pack-note { font-size: 12px; }
-    .pack-count { font-size: 12px; }
-    .med-name { font-size: 19px; }
-    .med-type { font-size: 11px; }
-    .med-timing { font-size: 14px; }
-    .med-detail { font-size: 14px; }
-    .med-note { font-size: 13px; }
-    .seasick-ladder h3 { font-size: 12px; }
-    .ladder-step { font-size: 14px; }
-    .ladder-num { font-size: 11px; }
-    .seasick-ladder p { font-size: 13px !important; }
-    .info-block h3 { font-size: 12px; }
-    .info-block p, .info-block li { font-size: 15px; }
-    .info-block table { font-size: 14px !important; }
-    .alert-block { font-size: 14px; }
-    .alert-block strong { font-size: 13px; }
   }
 </style>
 </head>
@@ -151,6 +119,7 @@
   <button class="tab" onclick="showTab('meds')">Medications</button>
   <button class="tab" onclick="showTab('need-to-know')">Need to Know</button>
   <button class="tab" onclick="showTab('culture')">Culture & Places</button>
+  <button class="tab" onclick="showTab('map')">Route Map</button>
 </div>
 
 <!-- ITINERARY -->
@@ -369,7 +338,9 @@
     <div class="pack-item"><input type="checkbox" id="p0f"><label for="p0f">Print emergency document (passport copy, card numbers, contacts) <span class="pack-note">Store separately from originals — one copy in daypack, one in checked bag</span></label></div>
     <div class="pack-item"><input type="checkbox" id="p0ins2"><label for="p0ins2">Screenshot TripMate insurance info to phone <span class="pack-note">Plan #UF694B · Emergency: +1-954-334-8953 (collect outside US)</span></label></div>
     <div class="pack-item"><input type="checkbox" id="p0fid"><label for="p0fid">Put FootprintID card in wallet <span class="pack-note">The blue card — Membership #80-331-751 · Emergency: +1-855-374-3411</span></label></div>
-    <div class="pack-item"><input type="checkbox" id="p0g"><label for="p0g">Save emergency document to phone Notes</label></div>
+    <div class="pack-item"><input type="checkbox" id="p0g"><label for="p0g">Save emergency document to phone Notes <span class="pack-note">This is your backup if you lose the printed copy</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p0print"><label for="p0print">⚠️ Print the emergency document <span class="pack-note">No internet or cell service on the ship (Apr 6–9) or in remote Patagonia — printed copy is essential</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p0offline"><label for="p0offline">Save this dashboard for offline use on your phone <span class="pack-note">Before boarding the ship Apr 6 — no WiFi or cell service for 4 days. In Safari: share → Add to Home Screen, then open it once while on WiFi so it caches. Or screenshot every tab.</span></label></div>
   </div>
 
   <div class="pack-category">
@@ -391,14 +362,14 @@
 
   <div class="pack-category">
     <h3>🎒 Gear</h3>
-    <div class="pack-item"><input type="checkbox" id="p13"><label for="p13">Trekking poles ✓</label></div>
+    <div class="pack-item"><input type="checkbox" id="p13"><label for="p13">Trekking poles ✓ <span class="pack-note">Use on all descents — knees take a beating on steep rocky trails. Adjust length: shorter going up, longer going down.</span></label></div>
     <div class="pack-item"><input type="checkbox" id="p14"><label for="p14">Trekking pole backpack attachment straps ✓</label></div>
     <div class="pack-item"><input type="checkbox" id="p15"><label for="p15">Sunglasses ✓</label></div>
     <div class="pack-item"><input type="checkbox" id="p16"><label for="p16">Festty eyewear retainer (keeps sunglasses on in wind/Zodiacs) ✓</label></div>
     <div class="pack-item"><input type="checkbox" id="p17"><label for="p17">Daypack / small backpack for excursions</label></div>
     <div class="pack-item"><input type="checkbox" id="p18"><label for="p18">Waterproof backpack ✓ <span class="pack-note">Use for Zodiac landings — everything inside stays dry</span></label></div>
-    <div class="pack-item"><input type="checkbox" id="p19"><label for="p19">Sea to Summit travel clothes line ✓</label></div>
-    <div class="pack-item"><input type="checkbox" id="p20"><label for="p20">Laundry detergent sheets ✓</label></div>
+    <div class="pack-item"><input type="checkbox" id="p19"><label for="p19">Sea to Summit travel clothes line ✓ <span class="pack-note">String between fixtures in your hotel room to dry handwashed socks, base layers. Ship cabin and small hotel rooms — this is how you avoid overpacking clothes.</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p20"><label for="p20">Laundry detergent sheets ✓ <span class="pack-note">Use with the clothes line — wash base layers and socks in the sink overnight</span></label></div>
   </div>
 
   <div class="pack-category">
@@ -415,10 +386,10 @@
 
   <div class="pack-category">
     <h3>🧴 Toiletries & Skincare</h3>
-    <div class="pack-item"><input type="checkbox" id="p27"><label for="p27">Sunscreen (strong — high altitude + reflection off ice)</label></div>
-    <div class="pack-item"><input type="checkbox" id="p28"><label for="p28">Lip balm with SPF</label></div>
-    <div class="pack-item"><input type="checkbox" id="p29"><label for="p29">Burt's Bees hand salve ✓</label></div>
-    <div class="pack-item"><input type="checkbox" id="p30"><label for="p30">O'Keeffe's Working Hands cream ✓</label></div>
+    <div class="pack-item"><input type="checkbox" id="p27"><label for="p27">Sunscreen (strong — high altitude + reflection off ice) <span class="pack-note">SPF 50+ minimum. Apply even on cloudy days — UV is intense at altitude and reflects off glaciers and water. You will burn without feeling hot.</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p28"><label for="p28">Lip balm with SPF <span class="pack-note">Wind and UV together destroy lips fast. Apply before every outdoor excursion and reapply constantly — this isn't optional in Patagonia.</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p29"><label for="p29">Burt's Bees hand salve ✓ <span class="pack-note">Thicker, waxy formula — use at night or when hands are really dry/cracked. Patagonia wind is brutal on skin.</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p30"><label for="p30">O'Keeffe's Working Hands cream ✓ <span class="pack-note">Daily hand moisturizer — apply every morning and after Zodiac landings when hands get wet and cold. Prevents cracking before it starts.</span></label></div>
     <div class="pack-item"><input type="checkbox" id="p31"><label for="p31">Hand sanitizer / hand wipes ✓</label></div>
     <div class="pack-item"><input type="checkbox" id="p32"><label for="p32">Mosquito repellent (skin) ✓ <span class="pack-note">Mainly for Buenos Aires & Iguassu</span></label></div>
     <div class="pack-item"><input type="checkbox" id="p33"><label for="p33">Magicfiber microfiber cloths (glasses) ✓</label></div>
@@ -427,14 +398,14 @@
 
   <div class="pack-category">
     <h3>🩹 First Aid & Comfort</h3>
-    <div class="pack-item"><input type="checkbox" id="p35"><label for="p35">Compeed blister pads x2 packs ✓ <span class="pack-note">Apply at first hot spot — don't wait for blister</span></label></div>
-    <div class="pack-item"><input type="checkbox" id="p36"><label for="p36">Body Glide Foot Glide anti-blister balm ✓ <span class="pack-note">Apply to feet before every hike</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p35"><label for="p35">Compeed blister pads x2 packs ✓ <span class="pack-note">Treatment once a blister forms — apply immediately at first hot spot and leave on. Body Glide prevents; Compeed treats. Don't wait until it's a full blister.</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p36"><label for="p36">Body Glide Foot Glide anti-blister balm ✓ <span class="pack-note">Apply to heels, toes, and any friction points before every hike — not after blisters form. Think of it like sunscreen: you put it on before you need it.</span></label></div>
     <div class="pack-item"><input type="checkbox" id="p37"><label for="p37">Blue traveler's med kit (full kit) ✓</label></div>
     <div class="pack-item"><input type="checkbox" id="p38"><label for="p38">All medications (see Medications tab)</label></div>
-    <div class="pack-item"><input type="checkbox" id="p39"><label for="p39">Liquid I.V. electrolyte sticks ✓ <span class="pack-note">Great for long hike days and bus days</span></label></div>
-    <div class="pack-item"><input type="checkbox" id="p40"><label for="p40">Ginger chews ✓</label></div>
+    <div class="pack-item"><input type="checkbox" id="p39"><label for="p39">Liquid I.V. electrolyte sticks ✓ <span class="pack-note">Use proactively on hike days, bus days, Iguassu heat, and any time you have diarrhea — cold wind masks dehydration</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p40"><label for="p40">Ginger chews ✓ <span class="pack-note">First line for mild queasiness — use before reaching for Bonine. Also good for upset stomach generally. Keep a few in your pocket on ship days and rough bus days.</span></label></div>
     <div class="pack-item"><input type="checkbox" id="p40b"><label for="p40b">Kind bars (×6) <span class="pack-note">Emergency snacks — long bus days, delayed meals, early morning Zodiac excursions</span></label></div>
-    <div class="pack-item"><input type="checkbox" id="p40c"><label for="p40c">Band-aids (assorted sizes)</label></div>
+    <div class="pack-item"><input type="checkbox" id="p40c"><label for="p40c">Band-aids (assorted sizes) <span class="pack-note">For small cuts and scrapes from rocks/brush. Always cover with Neosporin first — no urgent care nearby Days 5–12.</span></label></div>
     <div class="pack-item"><input type="checkbox" id="p40d"><label for="p40d">Neosporin / antibiotic ointment <span class="pack-note">Apply under bandaids on any cuts or scrapes — no urgent care nearby on ship days</span></label></div>
   </div>
 
@@ -442,7 +413,7 @@
     <h3>💊 Daily Medications & Sleep</h3>
     <div class="pack-item"><input type="checkbox" id="pm1"><label for="pm1">Allegra (fexofenadine) — daily allergy <span class="pack-note">Take every day as usual, don't skip</span></label></div>
     <div class="pack-item"><input type="checkbox" id="pm2"><label for="pm2">Melatonin <span class="pack-note">JFK→Buenos Aires overnight flight + jet lag adjustment</span></label></div>
-    <div class="pack-item"><input type="checkbox" id="pm3"><label for="pm3">Magnesium glycinate <span class="pack-note">Sleep support — pairs well with melatonin on flights</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="pm3"><label for="pm3">Magnesium glycinate <span class="pack-note">Sleep + muscle recovery — take nightly on high-activity days, not just on the flight</span></label></div>
   </div>
 
   <div class="pack-category">
@@ -455,7 +426,7 @@
     <div class="pack-item"><input type="checkbox" id="p45"><label for="p45">Travel insurance card / policy number</label></div>
     <div class="pack-item"><input type="checkbox" id="p46"><label for="p46">OAT booking confirmation</label></div>
     <div class="pack-item"><input type="checkbox" id="p47"><label for="p47">Credit cards (notify banks of travel dates)</label></div>
-    <div class="pack-item"><input type="checkbox" id="p48"><label for="p48">USD cash $500 <span class="pack-note">Tips, optional tours, incidentals · Get: 20×$20 + 10×$10 · Mostly 20s; small bills for tips — large bills often refused or can't be changed</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p48"><label for="p48">USD cash $500 <span class="pack-note">20×$1 (housekeeping), 24×$10 (TEL tip, guides, taxis), 12×$20 (buffer) — all USD preferred for tipping</span></label></div>
   </div>
 </div>
 
@@ -474,7 +445,7 @@
       <tr style="background:#f5f5f5;"><td style="padding:5px 8px;border:1px solid #ccc;"><strong>Apr 6–9 (ship days)</strong></td><td style="padding:5px 8px;border:1px solid #ccc;">Bonine nightly · Ginger chews as needed · Escalate to Dramamine if needed</td></tr>
       <tr><td style="padding:5px 8px;border:1px solid #ccc;"><strong>Big hike days (Apr 6, 7, 10, 11)</strong></td><td style="padding:5px 8px;border:1px solid #ccc;">Ibuprofen if sore · Liquid I.V. · Magnesium glycinate at night for recovery</td></tr>
       <tr style="background:#f5f5f5;"><td style="padding:5px 8px;border:1px solid #ccc;"><strong>Long bus day (Apr 13)</strong></td><td style="padding:5px 8px;border:1px solid #ccc;">Liquid I.V. · Kind bar · Ibuprofen if needed</td></tr>
-      <tr><td style="padding:5px 8px;border:1px solid #ccc;"><strong>If diarrhea starts</strong></td><td style="padding:5px 8px;border:1px solid #ccc;">Imodium first · Trioral rehydration salts · Azithromycin only if fever/6+ stools/blood</td></tr>
+      <tr><td style="padding:5px 8px;border:1px solid #ccc;"><strong>If diarrhea starts</strong></td><td style="padding:5px 8px;border:1px solid #ccc;">Hydrate with Trioral salts first — let mild cases run their course. Imodium only if disruptive (long bus, can't miss activity). Azithromycin only if fever/6+ stools/blood.</td></tr>
       <tr style="background:#f5f5f5;"><td style="padding:5px 8px;border:1px solid #ccc;"><strong>Iguassu (Apr 17–18, hot & humid)</strong></td><td style="padding:5px 8px;border:1px solid #ccc;">Liquid I.V. · Mosquito repellent daily · Wear permethrin-treated clothes</td></tr>
     </table>
   </div>
@@ -520,9 +491,9 @@
   <div class="med-card">
     <div class="med-name">Imodium (Loperamide)</div>
     <span class="med-type gi">GI · Anti-Diarrheal</span>
-    <div class="med-timing">⏰ Take: At first sign of diarrhea — especially if you have activities that day</div>
-    <div class="med-detail">Slows gut motility. Use for acute diarrhea, especially before long bus rides or active days. Follow package dosing. Note: also in your blue travel kit (DiaResQ).</div>
-    <div class="med-note">⚠️ If you have fever or bloody stool, don't use Imodium — use Azithromycin instead and seek care.</div>
+    <div class="med-timing">⏰ Take: Only when diarrhea is disruptive — NOT for mild or early cases</div>
+    <div class="med-detail">Slows gut motility — which means it stops your body from flushing out whatever is causing the problem. For mild diarrhea, let it run its course and focus on hydration (Trioral salts + Liquid I.V.). Use Imodium when: you have a long bus ride or active excursion you cannot miss, OR diarrhea is frequent enough to be debilitating. Follow package dosing.</div>
+    <div class="med-note">⚠️ Never use if you have fever or bloody stool — that means infection, and blocking it in is dangerous. Use Azithromycin instead and seek care.</div>
   </div>
 
   <div class="med-card">
@@ -565,9 +536,12 @@
   </div>
 
 
+  <div class="med-card">
+    <div class="med-name">Liquid I.V. Electrolyte Sticks</div>
     <span class="med-type gi">Hydration</span>
-    <div class="med-timing">⏰ Take: On long hike days, bus days, or when you feel run down</div>
-    <div class="med-detail">Mix one stick into 16oz water. Great for Days 10–12 (heavy hiking), Day 12 (12hr bus), and any day with significant physical activity. Mandarin orange flavor.</div>
+    <div class="med-timing">⏰ Use: Hike days, bus days, Iguassu heat, and any time you have diarrhea</div>
+    <div class="med-detail">Mix one stick into 16oz water. Not just for emergencies — use proactively on any high-output day. Key moments: every major hike day (Days 6, 7, 10, 11, 12), the 10–12hr bus day (Day 13), and all of Iguassu (Days 16–18) where heat and humidity will drain you fast. Also use if you have diarrhea — rehydration is the first priority before anything else.</div>
+    <div class="med-note">💡 The cold and wind in Patagonia masks how much you're sweating and losing fluids. You may not feel thirsty but you're still depleting electrolytes on long hikes.</div>
   </div>
 </div>
 
@@ -654,6 +628,7 @@
       <li>La Tienda de Vinos wine tasting: $41/person (Day 13)</li>
       <li>Great Adventure boat tour: $75/person (Day 18)</li>
       <li>Notify your bank of travel dates before departure</li>
+      <li><strong>Bring ~$500 USD cash:</strong> 20× $1 (housekeeping), 24× $10 (TEL tip, guides, taxis), 12× $20 (buffer) — all USD, small bills preferred</li>
     </ul>
   </div>
 
@@ -687,7 +662,7 @@
     <span style="font-size:15px;font-weight:bold;">+1-954-334-8953</span></p>
     <br>
     <p><strong>Toll-free (US/Canada):</strong> 1-866-260-0362<br>
-    <strong>Email:</strong> ops@gga-usa.com<br>
+    <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1877686b587f7f79356d6b79367b7775">[email&#160;protected]</a><br>
     <strong>Claims:</strong> 1-866-900-8452 · travelclaimsonline.com</p>
     <br>
     <p><strong>What's covered:</strong> Emergency medical evacuation $75K · Trip interruption 150% of trip cost · Medical/dental $25K · Baggage loss $1,600 · Trip delay (8hr+) $500 · Baggage delay (24hr+) $400</p>
@@ -845,7 +820,96 @@
 
 </div>
 
-<script>
+<!-- MAP -->
+<div id="map" class="section">
+  <div class="section-title">Route Map</div>
+  <div class="section-subtitle">Your journey · South to north</div>
+
+  <div style="border-radius:4px;overflow:hidden;margin-bottom:20px;border:1px solid var(--border);background:white;padding:16px;">
+    <svg viewBox="0 0 340 480" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+      <!-- Background -->
+      <rect width="340" height="480" fill="#d4e8f5"/>
+      <!-- South America landmass rough outline -->
+      <path d="M120,20 L200,18 L230,30 L250,60 L255,100 L245,140 L255,180 L260,220 L250,260 L240,290 L230,310 L210,330 L195,355 L180,370 L165,380 L150,375 L135,360 L120,340 L108,310 L100,280 L95,250 L90,220 L88,190 L92,160 L98,130 L100,100 L105,70 L110,45 Z" fill="#c8d8a8" stroke="#8a9a78" stroke-width="1.5"/>
+      <!-- Argentina interior -->
+      <path d="M130,200 L220,200 L225,250 L215,290 L200,320 L180,345 L160,350 L140,335 L125,310 L115,280 L112,250 Z" fill="#d4e0b8"/>
+
+      <!-- STOP DOTS & LABELS -->
+      <!-- Buenos Aires -->
+      <circle cx="210" cy="255" r="7" fill="#c4773b" stroke="white" stroke-width="2"/>
+      <text x="220" y="252" font-size="11" font-family="monospace" fill="#1a1a18" font-weight="bold">Buenos Aires</text>
+      <text x="220" y="263" font-size="9" font-family="monospace" fill="#8a8070">D2–3, D14–15</text>
+
+      <!-- Ushuaia -->
+      <circle cx="168" cy="390" r="7" fill="#c4773b" stroke="white" stroke-width="2"/>
+      <text x="178" y="387" font-size="11" font-family="monospace" fill="#1a1a18" font-weight="bold">Ushuaia</text>
+      <text x="178" y="398" font-size="9" font-family="monospace" fill="#8a8070">D4–5</text>
+
+      <!-- Punta Arenas -->
+      <circle cx="148" cy="372" r="5" fill="#1e3a5f" stroke="white" stroke-width="1.5"/>
+      <text x="90" y="370" font-size="10" font-family="monospace" fill="#1e3a5f">Punta Arenas</text>
+      <text x="96" y="380" font-size="9" font-family="monospace" fill="#8a8070">D9 disembark</text>
+
+      <!-- Ship route -->
+      <path d="M168,390 Q140,400 130,385 Q110,370 118,355 Q125,342 148,372" fill="none" stroke="#1e3a5f" stroke-width="2" stroke-dasharray="5,3"/>
+      <text x="92" y="408" font-size="9" font-family="monospace" fill="#1e3a5f">🚢 Ship D6–9</text>
+
+      <!-- Puerto Natales -->
+      <circle cx="142" cy="352" r="5" fill="#2a5c45" stroke="white" stroke-width="1.5"/>
+      <text x="80" y="350" font-size="10" font-family="monospace" fill="#2a5c45">Pto Natales</text>
+      <text x="86" y="360" font-size="9" font-family="monospace" fill="#8a8070">D10</text>
+
+      <!-- Torres del Paine -->
+      <circle cx="138" cy="338" r="5" fill="#2a5c45" stroke="white" stroke-width="1.5"/>
+      <text x="76" y="336" font-size="10" font-family="monospace" fill="#2a5c45">Torres del Paine</text>
+      <text x="82" y="346" font-size="9" font-family="monospace" fill="#8a8070">D11–12</text>
+
+      <!-- El Calafate -->
+      <circle cx="170" cy="330" r="5" fill="#2a5c45" stroke="white" stroke-width="1.5"/>
+      <text x="178" y="328" font-size="10" font-family="monospace" fill="#2a5c45">El Calafate</text>
+      <text x="178" y="338" font-size="9" font-family="monospace" fill="#8a8070">D13–14</text>
+
+      <!-- Iguassu -->
+      <circle cx="222" cy="168" r="7" fill="#c4773b" stroke="white" stroke-width="2"/>
+      <text x="230" y="165" font-size="11" font-family="monospace" fill="#1a1a18" font-weight="bold">Iguassu Falls</text>
+      <text x="230" y="176" font-size="9" font-family="monospace" fill="#8a8070">D16–18</text>
+
+      <!-- Route line -->
+      <polyline points="210,255 190,270 180,300 170,330 165,338 142,352 148,372 168,390" fill="none" stroke="#c4773b" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+      <polyline points="210,255 212,200 222,168" fill="none" stroke="#c4773b" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+
+      <!-- North arrow -->
+      <text x="16" y="30" font-size="14" font-family="monospace" fill="#5a5040">N↑</text>
+
+      <!-- Scale note -->
+      <text x="10" y="465" font-size="9" font-family="monospace" fill="#8a8070">Approximate positions · Not to scale</text>
+    </svg>
+  </div>
+
+  <div class="info-block">
+    <h3>🗺️ Stops In Order</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:14px;">
+      <tr style="background:var(--warm);"><th style="padding:8px;text-align:left;border:1px solid var(--border);">Day</th><th style="padding:8px;text-align:left;border:1px solid var(--border);">Location</th><th style="padding:8px;text-align:left;border:1px solid var(--border);">Country</th></tr>
+      <tr><td style="padding:7px 8px;border:1px solid var(--border);">D2–3</td><td style="padding:7px 8px;border:1px solid var(--border);">Buenos Aires</td><td style="padding:7px 8px;border:1px solid var(--border);">🇦🇷 Argentina</td></tr>
+      <tr style="background:var(--warm);"><td style="padding:7px 8px;border:1px solid var(--border);">D4–5</td><td style="padding:7px 8px;border:1px solid var(--border);">Ushuaia</td><td style="padding:7px 8px;border:1px solid var(--border);">🇦🇷 Argentina</td></tr>
+      <tr><td style="padding:7px 8px;border:1px solid var(--border);">D6–9</td><td style="padding:7px 8px;border:1px solid var(--border);">M/V Ventus Australis — Beagle Channel, Cape Horn, Fjords</td><td style="padding:7px 8px;border:1px solid var(--border);">🇨🇱 Chile</td></tr>
+      <tr style="background:var(--warm);"><td style="padding:7px 8px;border:1px solid var(--border);">D9</td><td style="padding:7px 8px;border:1px solid var(--border);">Punta Arenas (disembark)</td><td style="padding:7px 8px;border:1px solid var(--border);">🇨🇱 Chile</td></tr>
+      <tr><td style="padding:7px 8px;border:1px solid var(--border);">D10</td><td style="padding:7px 8px;border:1px solid var(--border);">Puerto Natales</td><td style="padding:7px 8px;border:1px solid var(--border);">🇨🇱 Chile</td></tr>
+      <tr style="background:var(--warm);"><td style="padding:7px 8px;border:1px solid var(--border);">D11–12</td><td style="padding:7px 8px;border:1px solid var(--border);">Torres del Paine</td><td style="padding:7px 8px;border:1px solid var(--border);">🇨🇱 Chile</td></tr>
+      <tr><td style="padding:7px 8px;border:1px solid var(--border);">D13–14</td><td style="padding:7px 8px;border:1px solid var(--border);">El Calafate / Perito Moreno Glacier</td><td style="padding:7px 8px;border:1px solid var(--border);">🇦🇷 Argentina</td></tr>
+      <tr style="background:var(--warm);"><td style="padding:7px 8px;border:1px solid var(--border);">D14–15</td><td style="padding:7px 8px;border:1px solid var(--border);">Buenos Aires (return)</td><td style="padding:7px 8px;border:1px solid var(--border);">🇦🇷 Argentina</td></tr>
+      <tr><td style="padding:7px 8px;border:1px solid var(--border);">D16–18</td><td style="padding:7px 8px;border:1px solid var(--border);">Iguassu Falls</td><td style="padding:7px 8px;border:1px solid var(--border);">🇧🇷 Brazil</td></tr>
+      <tr style="background:var(--warm);"><td style="padding:7px 8px;border:1px solid var(--border);">D19</td><td style="padding:7px 8px;border:1px solid var(--border);">Depart home</td><td style="padding:7px 8px;border:1px solid var(--border);">🇦🇷 Argentina</td></tr>
+    </table>
+  </div>
+
+  <div class="info-block">
+    <h3>📐 Scale</h3>
+    <p>Buenos Aires to Ushuaia is roughly the same distance as New York to Miami — then you go further south into the Drake Passage area. Iguassu Falls at the end is back north, near the Brazil/Argentina/Paraguay border. You're covering an enormous amount of ground.</p>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function showTab(id) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -873,10 +937,25 @@
     document.getElementById('pack-bar').style.width = pct + '%';
     document.getElementById('pack-count').textContent = checked.length + ' of ' + all.length + ' packed (' + pct + '%)';
   }
-  document.querySelectorAll('#packing input[type="checkbox"]').forEach(cb => {
-    cb.addEventListener('change', updateProgress);
-  });
-  updateProgress();
-</script>
-</body>
-</html>
+
+  // Save checkbox state to localStorage
+  function saveCheckboxes() {
+    const state = {};
+    document.querySelectorAll('#packing input[type="checkbox"]').forEach(cb => {
+      state[cb.id] = cb.checked;
+    });
+    localStorage.setItem('patagonia-packing', JSON.stringify(state));
+  }
+
+  // Restore checkbox state from localStorage
+  function restoreCheckboxes() {
+    const saved = localStorage.getItem('patagonia-packing');
+    if (!saved) return;
+    const state = JSON.parse(saved);
+    document.querySelectorAll('#packing input[type="checkbox"]').forEach(cb => {
+      if (cb.id in state) cb.checked = state[cb.id];
+    });
+  }
+
+  restoreCheckboxes();
+  up
