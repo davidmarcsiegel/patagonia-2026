@@ -325,6 +325,31 @@
   <div class="pack-count" id="pack-count">0 of 0 packed</div>
   <div class="pack-progress"><div class="pack-progress-bar" id="pack-bar"></div></div>
 
+  <div class="pack-category" style="background:#f0f5ff;border:1px solid #b8cce8;padding:14px;margin-bottom:24px;">
+    <h3 style="color:#1e3a5f;border-color:#b8cce8;">🎒 Carry-On Pouch — Never Checked</h3>
+    <p style="font-size:13px;color:#3a4a60;margin-bottom:12px;line-height:1.6;">One dedicated pouch that lives in your carry-on for the entire trip. Rule: if losing it would make the next 24 hours miserable, it goes here. Pull these from your main bags — don't pack duplicates, just make sure these specific ones are always on your person.</p>
+    <p style="font-size:12px;color:#1e3a5f;font-weight:500;margin:10px 0 6px;">SLEEP + COMFORT</p>
+    <div class="pack-item"><input type="checkbox" id="cop1"><label for="cop1">Surface over-ear headphones + AirPods 4 <span class="pack-note">Over-ears = primary sleep; AirPods = backup or when lying on your side. Hoodie helps keep over-ears in place.</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="cop2"><label for="cop2">Both charging cables (Surface headphones + AirPods)</label></div>
+    <div class="pack-item"><input type="checkbox" id="cop3"><label for="cop3">Foam earplugs (1 pair) <span class="pack-note">No-battery fail-safe — better than ANC for constant engine drone</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="cop4"><label for="cop4">Eye mask <span class="pack-note">Default redeye setup: over-ears + eye mask. Switch to AirPods if over-ears get uncomfortable lying on your side.</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="cop5"><label for="cop5">Melatonin + magnesium glycinate</label></div>
+    <div class="pack-item"><input type="checkbox" id="cop6"><label for="cop6">Lip balm</label></div>
+    <p style="font-size:12px;color:#1e3a5f;font-weight:500;margin:10px 0 6px;">PAIN / FEEL HUMAN</p>
+    <div class="pack-item"><input type="checkbox" id="cop7"><label for="cop7">Ibuprofen (small supply)</label></div>
+    <div class="pack-item"><input type="checkbox" id="cop8"><label for="cop8">Pepto chewables or Tums</label></div>
+    <div class="pack-item"><input type="checkbox" id="cop9"><label for="cop9">Imodium (2–4 tabs) <span class="pack-note">The moment you need this is exactly when you won't want to be hunting through bags</span></label></div>
+    <p style="font-size:12px;color:#1e3a5f;font-weight:500;margin:10px 0 6px;">SEASICKNESS — keep here even if rest of meds are in checked bag</p>
+    <div class="pack-item"><input type="checkbox" id="cop10"><label for="cop10">Bonine (small supply)</label></div>
+    <div class="pack-item"><input type="checkbox" id="cop11"><label for="cop11">Ginger chews (handful)</label></div>
+    <p style="font-size:12px;color:#1e3a5f;font-weight:500;margin:10px 0 6px;">HYGIENE RESET</p>
+    <div class="pack-item"><input type="checkbox" id="cop12"><label for="cop12">Face wipes / baby wipes</label></div>
+    <div class="pack-item"><input type="checkbox" id="cop13"><label for="cop13">Mini deodorant (travel size)</label></div>
+    <div class="pack-item"><input type="checkbox" id="cop14"><label for="cop14">Hand sanitizer</label></div>
+    <p style="font-size:12px;color:#1e3a5f;font-weight:500;margin:10px 0 6px;">PRACTICAL</p>
+    <div class="pack-item"><input type="checkbox" id="cop15"><label for="cop15">Phone charging cable + portable battery pack</label></div>
+  </div>
+
   <div class="pack-category">
     <h3>⚠️ Before You Leave (Do These First)</h3>
     <div class="pack-item"><input type="checkbox" id="p0a"><label for="p0a">Spray clothes with Permethrin (for Brazil leg) — do 24–48hrs before departure, let dry completely</label></div>
@@ -378,7 +403,11 @@
     <div class="pack-item"><input type="checkbox" id="p23"><label for="p23">Phone + charging cable</label></div>
     <div class="pack-item"><input type="checkbox" id="p24"><label for="p24">Camera + charger / extra batteries</label></div>
     <div class="pack-item"><input type="checkbox" id="p25"><label for="p25">Portable phone battery pack / power bank ✓ <span class="pack-note">Charge fully before each active day — limited outlets on ship</span></label></div>
-    <div class="pack-item"><input type="checkbox" id="p26"><label for="p26">Headphones / earbuds</label></div>
+    <div class="pack-item"><input type="checkbox" id="p26"><label for="p26">Surface over-ear ANC headphones — primary sleep use <span class="pack-note">Better passive isolation + ANC for redeye and ship. Default combo: over-ears + eye mask. Hoodie helps keep them in place while sleeping.</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p26s"><label for="p26s">Surface headphones charging cable</label></div>
+    <div class="pack-item"><input type="checkbox" id="p26ap"><label for="p26ap">AirPods 4 — backup / walking around <span class="pack-note">Switch to AirPods if lying on your side makes over-ears uncomfortable. Also backup if headphone battery dies.</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p26apc"><label for="p26apc">AirPods charging cable / case</label></div>
+    <div class="pack-item"><input type="checkbox" id="p26ep"><label for="p26ep">Foam earplugs (2 pairs — 3M 1100 or E-A-R Classic) <span class="pack-note">The no-battery, no-fuss fail-safe. Better than ANC for constant engine drone. Keep one pair in carry-on pouch, one spare.</span></label></div>
     <div class="pack-item"><input type="checkbox" id="p26b"><label for="p26b">Eye mask ✓ <span class="pack-note">Packed away — find and set aside before trip</span></label></div>
     <div class="pack-item"><input type="checkbox" id="p26c"><label for="p26c">Travel neck pillow ✓ <span class="pack-note">Packed away — find and set aside before trip</span></label></div>
   </div>
@@ -392,7 +421,10 @@
     <div class="pack-item"><input type="checkbox" id="p31"><label for="p31">Hand sanitizer / hand wipes ✓</label></div>
     <div class="pack-item"><input type="checkbox" id="p32"><label for="p32">Mosquito repellent (skin) ✓ <span class="pack-note">Mainly for Buenos Aires & Iguassu</span></label></div>
     <div class="pack-item"><input type="checkbox" id="p33"><label for="p33">Magicfiber microfiber cloths (glasses) ✓</label></div>
-    <div class="pack-item"><input type="checkbox" id="p34"><label for="p34">Standard toiletries (toothbrush, etc.)</label></div>
+    <div class="pack-item"><input type="checkbox" id="p34"><label for="p34">Standard toiletries (toothbrush, toothpaste, etc.)</label></div>
+    <div class="pack-item"><input type="checkbox" id="p34b"><label for="p34b">Floss <span class="pack-note">Tiny morale boost on long trip days</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p34c"><label for="p34c">Face wipes / baby wipes <span class="pack-note">Hygiene reset on long travel days, redeye, or when a shower isn't possible</span></label></div>
+    <div class="pack-item"><input type="checkbox" id="p34d"><label for="p34d">Mini deodorant — travel size <span class="pack-note">Keep one in carry-on pouch so it's always accessible on travel days</span></label></div>
   </div>
 
   <div class="pack-category">
