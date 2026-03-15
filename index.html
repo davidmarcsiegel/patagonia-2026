@@ -119,6 +119,7 @@
   <button class="tab" onclick="showTab('meds')">Medications</button>
   <button class="tab" onclick="showTab('need-to-know')">Need to Know</button>
   <button class="tab" onclick="showTab('culture')">Culture & Places</button>
+  <button class="tab" onclick="showTab('route-map')">Route Map</button>
 </div>
 
 <!-- ITINERARY -->
@@ -163,6 +164,7 @@
     <div class="day-title">Fly to Ushuaia</div>
     <div class="day-hotel">🏨 Cilene del Faro Hotel</div>
     <div class="day-detail">City at the End of the World · Museo del Fin del Mundo · Prison Museum · Dinner with local family<br>Meals: Breakfast (hotel), Dinner (hosted)</div>
+    <div class="alert-inline">⚠️ Take Bonine tonight before bed — boarding ship tomorrow, sea conditions ahead</div>
   </div>
 
   <div class="itinerary-day ship-day">
@@ -173,7 +175,6 @@
     <div class="day-title">Ushuaia → Embark Ventus Australis</div>
     <div class="day-hotel">🚢 M/V Ventus Australis (4 nights)</div>
     <div class="day-detail">Morning free in Ushuaia · Falklands War veteran discussion · Board ship late afternoon · Safety drill · Captain's Welcome Dinner<br>Meals: Breakfast (hotel), Lunch (own), Dinner (ship)</div>
-    <div class="alert-inline">⚠️ Take Bonine tonight before bed — sea conditions ahead</div>
   </div>
 
   <div class="itinerary-day ship-day">
@@ -586,7 +587,8 @@
     </ul>
   </div>
 
-
+  <div class="info-block">
+    <h3>🌡️ Weather by Destination</h3>
     <p>Patagonia (Days 5–13): 50–60°F, wind up to 44mph with gusts to 56mph, rain possible anytime. Layer aggressively — it changes fast.<br><br>
     Buenos Aires (Days 2–3, 14–15): Daily highs in the 80s. Much warmer — pack a separate layer set.<br><br>
     Iguassu Falls (Days 16–18): 90°F+ with 90% humidity. Completely different climate. You'll get wet from the falls — bring a dry bag for your phone.</p>
@@ -661,7 +663,6 @@
     <span style="font-size:15px;font-weight:bold;">+1-954-334-8953</span></p>
     <br>
     <p><strong>Toll-free (US/Canada):</strong> 1-866-260-0362<br>
-    <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1877686b587f7f79356d6b79367b7775">[email&#160;protected]</a><br>
     <strong>Claims:</strong> 1-866-900-8452 · travelclaimsonline.com</p>
     <br>
     <p><strong>What's covered:</strong> Emergency medical evacuation $75K · Trip interruption 150% of trip cost · Medical/dental $25K · Baggage loss $1,600 · Trip delay (8hr+) $500 · Baggage delay (24hr+) $400</p>
@@ -681,6 +682,7 @@
     <br>
     <p><strong>Card:</strong> Keep the blue FootprintID card in your wallet throughout the trip. If you're incapacitated, emergency responders can call the number on the card to access your health information.</p>
   </div>
+
 </div>
 
 <div id="culture" class="section">
@@ -819,67 +821,12 @@
 
 </div>
 
+<div id="route-map" class="section">
+  <div class="section-title">Route Map</div>
   <div class="section-subtitle">Your journey · South to north</div>
 
   <div style="border-radius:4px;overflow:hidden;margin-bottom:20px;border:1px solid var(--border);background:white;padding:16px;">
-    <svg viewBox="0 0 340 480" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
-      <!-- Background -->
-      <rect width="340" height="480" fill="#d4e8f5"/>
-      <!-- South America landmass rough outline -->
-      <path d="M120,20 L200,18 L230,30 L250,60 L255,100 L245,140 L255,180 L260,220 L250,260 L240,290 L230,310 L210,330 L195,355 L180,370 L165,380 L150,375 L135,360 L120,340 L108,310 L100,280 L95,250 L90,220 L88,190 L92,160 L98,130 L100,100 L105,70 L110,45 Z" fill="#c8d8a8" stroke="#8a9a78" stroke-width="1.5"/>
-      <!-- Argentina interior -->
-      <path d="M130,200 L220,200 L225,250 L215,290 L200,320 L180,345 L160,350 L140,335 L125,310 L115,280 L112,250 Z" fill="#d4e0b8"/>
-
-      <!-- STOP DOTS & LABELS -->
-      <!-- Buenos Aires -->
-      <circle cx="210" cy="255" r="7" fill="#c4773b" stroke="white" stroke-width="2"/>
-      <text x="220" y="252" font-size="11" font-family="monospace" fill="#1a1a18" font-weight="bold">Buenos Aires</text>
-      <text x="220" y="263" font-size="9" font-family="monospace" fill="#8a8070">D2–3, D14–15</text>
-
-      <!-- Ushuaia -->
-      <circle cx="168" cy="390" r="7" fill="#c4773b" stroke="white" stroke-width="2"/>
-      <text x="178" y="387" font-size="11" font-family="monospace" fill="#1a1a18" font-weight="bold">Ushuaia</text>
-      <text x="178" y="398" font-size="9" font-family="monospace" fill="#8a8070">D4–5</text>
-
-      <!-- Punta Arenas -->
-      <circle cx="148" cy="372" r="5" fill="#1e3a5f" stroke="white" stroke-width="1.5"/>
-      <text x="90" y="370" font-size="10" font-family="monospace" fill="#1e3a5f">Punta Arenas</text>
-      <text x="96" y="380" font-size="9" font-family="monospace" fill="#8a8070">D9 disembark</text>
-
-      <!-- Ship route -->
-      <path d="M168,390 Q140,400 130,385 Q110,370 118,355 Q125,342 148,372" fill="none" stroke="#1e3a5f" stroke-width="2" stroke-dasharray="5,3"/>
-      <text x="92" y="408" font-size="9" font-family="monospace" fill="#1e3a5f">🚢 Ship D6–9</text>
-
-      <!-- Puerto Natales -->
-      <circle cx="142" cy="352" r="5" fill="#2a5c45" stroke="white" stroke-width="1.5"/>
-      <text x="80" y="350" font-size="10" font-family="monospace" fill="#2a5c45">Pto Natales</text>
-      <text x="86" y="360" font-size="9" font-family="monospace" fill="#8a8070">D10</text>
-
-      <!-- Torres del Paine -->
-      <circle cx="138" cy="338" r="5" fill="#2a5c45" stroke="white" stroke-width="1.5"/>
-      <text x="76" y="336" font-size="10" font-family="monospace" fill="#2a5c45">Torres del Paine</text>
-      <text x="82" y="346" font-size="9" font-family="monospace" fill="#8a8070">D11–12</text>
-
-      <!-- El Calafate -->
-      <circle cx="170" cy="330" r="5" fill="#2a5c45" stroke="white" stroke-width="1.5"/>
-      <text x="178" y="328" font-size="10" font-family="monospace" fill="#2a5c45">El Calafate</text>
-      <text x="178" y="338" font-size="9" font-family="monospace" fill="#8a8070">D13–14</text>
-
-      <!-- Iguassu -->
-      <circle cx="222" cy="168" r="7" fill="#c4773b" stroke="white" stroke-width="2"/>
-      <text x="230" y="165" font-size="11" font-family="monospace" fill="#1a1a18" font-weight="bold">Iguassu Falls</text>
-      <text x="230" y="176" font-size="9" font-family="monospace" fill="#8a8070">D16–18</text>
-
-      <!-- Route line -->
-      <polyline points="210,255 190,270 180,300 170,330 165,338 142,352 148,372 168,390" fill="none" stroke="#c4773b" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
-      <polyline points="210,255 212,200 222,168" fill="none" stroke="#c4773b" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
-
-      <!-- North arrow -->
-      <text x="16" y="30" font-size="14" font-family="monospace" fill="#5a5040">N↑</text>
-
-      <!-- Scale note -->
-      <text x="10" y="465" font-size="9" font-family="monospace" fill="#8a8070">Approximate positions · Not to scale</text>
-    </svg>
+    <img src="route-map.png" alt="OAT Patagonia Route Map" style="width:100%;height:auto;display:block;" />
   </div>
 
   <div class="info-block">
