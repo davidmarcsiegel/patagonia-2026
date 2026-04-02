@@ -970,12 +970,8 @@
   document.querySelectorAll('#packing input[type="checkbox"]').forEach(cb => {
     cb.addEventListener('change', () => {
       saveCheckboxes();
-      updateProgress();
-    });
-  });
-
-  <!-- your page content -->
-
+      
+    </script>
   <script>
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("./sw.js");
